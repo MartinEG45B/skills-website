@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Past Qualifications</title>
+  <meta name="description" content="Shows my past qualifications on a table.">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="preload" href="images/fonts/PlayfairDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#563727">
+  <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#372c2e">
+</head>
+
+<body>
+  <nav class="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="qualifications.html">Qualifications</a></li>
+    </ul>
+  </nav>
+  <header id="qualificatoinsHeader">
+    <h1>Qualifications</h1>
+    <p class="shortP">This page shows all of the qualifications I have acquired in the past. See below to see all of my
+      past qualifications.</p>
+  </header>
+  <main>
+    <table>
+      <caption>Qualification Table</caption>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Institution</th>
+          <th>Qualification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2017</td>
+          <td>British Council</td>
+          <td>IELTS-5.5</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Cambridge Assessment English</td>
+          <td>Cambridge English - PET</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Eiken Foundation of Japan</td>
+          <td>Eiken-grade 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Number of Qualifications</th>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+  <footer>
+    <h2 class="footerH2">Contacts</h2>
+    <p>Name: Euan Martin</p>
+    <p><a href="mailto:m022207i@student.staffs.ac.uk">m022207i@student.staffs.ac.uk</a></p>
+  </footer>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("../sw.js")
+        .then((registration) => console.log("Service worker registration successful", registration))
+        .catch((err) => console.log("Service worker regstration failed", err)));
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pricing and Ordering Coffee Application</title>
+  <meta name="description"
+    content="Coffee ordering website that demonstrates the power of ECMAScript. By choosing drink and other options can order a coffee">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="preload" href="images/fonts/PlayfairDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#563727">
+  <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#372c2e">
+</head>
+
+<body>
+  <nav class="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="qualifications.html">Qualifications</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Coffee Shop</h1>
+    <p id="jsHP" class="shortP">Thank you for choosing our coffee! Order your coffee below.</p>
+  </header>
+  <main id="jsMain">
+    <div id="coffee">
+      <form method="get">
+        <fieldset>
+          <legend>Order Coffee</legend>
+          <button type="button" id="orderFav" name="orderFav" disabled>Order favourite</button>
+          <div>
+            <div class="field">
+              <label for="drink">Drink<span class="required">*</span></label>
+              <select id="drink" name="drink" required autofocus>
+                <option value="">Choose a drink</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="size">Size</label>
+              <select id="size" name="size">
+                <option value="Small">Small £2.45</option>
+                <option value="Medium" selected>Medium £2.65</option>
+                <option value="Large">Large £2.85</option>
+              </select>
+            </div>
+            <!-- only when latte, cappuccino or flat white -->
+            <div class="field">
+              <label for="milk">Milk</label>
+              <select id="milk" name="milk" disabled>
+              </select>
+            </div>
+          </div>
+          <fieldset>
+            <legend>Any Extra?</legend>
+            <button type="button" id="sugar" name="sugar" value="Sugar">Add sugar</button>
+            <button type="button" id="cream" name="cream" value="Cream">Add cream £0.50</button>
+            <div class="fieldNum">
+              <label for="syrup">Syrup (£0.25 per shot)</label>
+              <input type="number" id="syrup" name="syrup" value="0" min="0">
+            </div>
+          </fieldset>
+          <button type="button" id="addFav" name="addFav" disabled>Add to favourites</button>
+          <button type="button" id="add" name="add" disabled>Add to order</button>
+          <button type="button" id="place" name="place" disabled>Place order</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="ordered">
+      <h2>Current drink(s)</h2>
+      <p id="currDrinksP"></p>
+      <h2>Cost of the current drink(s) </h2>
+      <p id="currCostP">£ <span>0.00</span></p>
+      <h2>Overall order</h2>
+      <p id="overallOrderP"></p>
+      <h2>Overall cost of the order</h2>
+      <p id="overallCostP">£ <span>0.00</span></p>
+      <p id="confirmation1"><strong></strong> </p>
+      <p id="confirmation2"><strong></strong> </p>
+    </div>
+  </main>
+  <footer>
+    <h2 class="footerH2">Contacts</h2>
+    <p>Name: Euan Martin</p>
+    <p><a href="mailto:m022207i@student.staffs.ac.uk">m022207i@student.staffs.ac.uk</a></p>
+  </footer>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("../sw.js")
+        .then((registration) => console.log("Service worker registration successful", registration))
+        .catch((err) => console.log("Service worker regstration failed", err)));
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

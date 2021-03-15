@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS and ECMAScript Skills</title>
+  <meta name="description"
+    content="Explains about CSS and ECMAScript. In the CSS article, there are two example pages to show the power of CSS, and in the ECMAScript article there is one coffee ordering website to demonstrate the power of ECMAScript">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="preload" href="images/fonts/PlayfairDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#563727">
+  <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#372c2e">
+</head>
+
+<body>
+  <nav class="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="qualifications.html">Qualifications</a></li>
+    </ul>
+  </nav>
+  <div id="container">
+    <header id="skillsHeader">
+      <h1>Skills</h1>
+      <p>In web development, there are three fundamental skills used to make a fascinating website. HTML (Hyper
+        Hypertext
+        Markup
+        Language) as a <strong>content layer</strong> (where the content of the page lives and gives the structure),
+        CSS (Cascading Style Sheets) as a <strong>presentation layer</strong> (where styles are added to state how HTML
+        content
+        is presented), and
+        ECMAScript also known as JavaScript as a <strong>behaviour layer</strong> (where we can change how the page
+        behaves
+        or
+        interact with users). This page explains what CSS and ECMAScript
+        are with showing example pages.</p>
+    </header>
+    <main>
+      <article>
+        <h2 id="cssSection" class="skillsH2">CSS</h2>
+        <p class="skillsArticleP">CSS stands for Cascading Style Sheets. It acts as a presentation layer on a website
+          which means it adds styles to the HTML and changes how the HTML will be presented to users. There are three
+          ways of adding CSS to an HTML
+          file, inline CSS (way of adding CSS to specific tags using style attribute), internal CSS (way of adding CSS
+          inside &lt;head&gt; tag using &lt;style&gt; tag), and external CSS (way of adding CSS by linking a external
+          CSS
+          file to an HTML file). The best way of adding CSS is external CSS since the CSS is separated from the HTML
+          file, whereas inline CSS and internal CSS live inside the HTML file which makes the HTML cluttered and makes
+          the
+          size
+          of the HTML file big. External CSS makes it easier to maintain the HTML file and the CSS file since it is
+          separated and a single
+          CSS file can be linked to multiple webpages, hence efficient.</p>
+        <p class="skillsArticleP">I'll show the power of CSS by demonstrating how CSS can apply completely different
+          styles to an exact same HTML file in the following sections.</p>
+      </article>
+      <article class="skillsArticle">
+        <h3 class="skillsH3">CSS design 1</h3>
+        <div class="flexD">
+          <picture class="flexP">
+            <source srcset="images/design1Big.webp, images/design1Big2x.webp 2x, images/design1Big3x.webp 3x"
+              type="image/webp" media="(min-width: 1000px)">
+            <source srcset="images/design1Medium.webp, images/design1Medium2x.webp 2x, images/design1Medium3x.webp 3x"
+              type="image/webp" media="(min-width: 600px)">
+            <source srcset="images/design1Small.webp, images/design1Small2x.webp 2x, images/design1Small3x.webp 3x"
+              type="image/webp" media="(max-width: 599px)">
+            <img class="imgInPDiff" src="images/design1Fallback.png"
+              srcset="images/design1Fallback.png, images/design1Fallback2x.png 2x, images/design1Fallback3x.png 3x"
+              alt="An image of the CSS Design 1 page.">
+          </picture>
+          <div>
+            <p class="article"> This website is about my interest in Computer Science and uses flexbox for the design.
+              On this website flexbox is used to align my articles (Software Development, Data Science, Machine
+              Learning)
+              below header "Interest", and to align three articles horizontally. Navigation bar's corners are rounded
+              using border-radius. The header and three articles are animated (with slide-in animation) and the
+              navigation bar has an animation that activates when it is clicked.
+            </p>
+            <div class="skillsDiv">
+              <h3>Demo</h3>
+              <a href="design1.html">CSS Design 1</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="skillsArticle">
+        <h3 class="skillsH3">CSS Design 2</h3>
+        <div class="flexD">
+          <picture class="flexP">
+            <source srcset="images/design2Big.webp, images/design2Big2x.webp 2x, images/design2Big3x.webp 3x"
+              type="image/webp" media="(min-width: 1000px)">
+            <source srcset="images/design2Medium.webp, images/design2Medium2x.webp 2x, images/design2Medium3x.webp 3x"
+              type="image/webp" media="(min-width: 600px)">
+            <source srcset="images/design2Small.webp, images/design2Small2x.webp 2x, images/design2Small3x.webp 3x"
+              type="image/webp" media="(max-width: 599px)">
+            <img class="imgInPDiff" src="images/design2Fallback.png"
+              srcset="images/design2Fallback.png, images/design2Fallback2x.png 2x, images/design2Fallback3x.png 3x"
+              alt="An image of the CSS Design 2 page.">
+          </picture>
+          <div>
+            <p class="article">This website's content is the same as CSS design 1 but designed used grid. Grid is used
+              to align three articles next to the header "Interest". This could be done with flexbox, but I used grid in
+              order to show how grid can be used. Also, the order of the three articles are different from CSS design
+              1 (Software Development, Data Science, and Machine Learning to Machine
+              Learning, Software Development, and Data Science). The navigation bar's content is aligned
+              vertically (using flexbox), which was horizontal in CSS design 1. Same as design 1 but with different
+              animation the header and three articles are animated (with fade-in animation) and the navigation bar has
+              an animation that activates when clicked. </p>
+            <div class="skillsDiv">
+              <h3>Demo</h3>
+              <a href="design2.html">CSS Design 2</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2 class="skillsH2">ECMAScript</h2>
+        <p class="skillsArticleP">ECMAScript stands for European Computer Manufacturer's Association. ECMAScript is also
+          known as JavaScript and it is called interchangeably, but strictly speaking, ECMAScript is the standard and
+          JavaScript is the language (created by Brendan Eich in 10 days) which implements ECMAScript standard. The
+          current
+          latest version of ECMAScript is ECMAScript 2020, but ECMAScript 2017 is the current widely-supported standard.
+          ECMAScript (JavaScript) acts as a behaviour layer on a website which means it changes how the page behaves or
+          interacts with users i.e. it adds interactivity. Same as CSS it is better to keep JavaScript separate from the
+          HTML file for efficiency, maintainability and to make the website work even if the user can't load or run the
+          JavaScript file. JavaScript file is added to the last part of the body (before the &lt;/body&gt; tag) using
+          &lt;script&gt; tag. The reason for adding it to the last part of the body is because when a browser loads a
+          JavaScript file it stops to load other files. This will make the website look slow to load. Another reason is
+          that JavaScript file on a website requires an HTML file, therefore it is better to load the HTML file before
+          the
+          Javascript file.
+          <p class="skillsArticleP skillsArticleMargin">The section below demonstrates the power of
+            ECMAScript (JavaScript) by using a
+            website
+            for ordering coffee. </p>
+      </article>
+      <article class="skillsArticle">
+        <h3 class="skillsH3">Coffee Ordering Website</h3>
+        <div class="flexD">
+          <picture class="flexP">
+            <source srcset="images/coffeeBig.webp, images/coffeeBig2x.webp 2x, images/coffeeBig3x.webp 3x"
+              type="image/webp" media="(min-width: 1000px)">
+            <source srcset="images/coffeeMedium.webp, images/coffeeMedium2x.webp 2x, images/coffeeMedium3x.webp 3x"
+              type="image/webp" media="(min-width: 600px)">
+            <source srcset="images/coffeeSmall.webp, images/coffeeSmall2x.webp 2x, images/coffeeSmall3x.webp 3x"
+              type="image/webp" media="(max-width: 599px)">
+            <img class="imgInP" src="images/coffeeFallback.jpg"
+              srcset="images/coffeeFallback.jpg, images/coffeeFallback2x.jpg 2x, images/coffeeFallback3x.jpg 3x"
+              alt="An image of coffee being poured in a coffee cup in a place with a lot of coffee beans">
+          </picture>
+          <div>
+            <p class="article"> This is a website for ordering coffee. You can order coffee by choosing a drink with any
+              other options. Keep an eye on all interactions with each element. It will update the user's order
+              concurrently. This is done by using event listeners. Also, when the "Add to favourites" button is clicked,
+              it will record the current order and by clicking on the "Order favourite" button it will automatically
+              fill out the form. This is done by using local storage. The feature that when you order 10 drinks the 10th
+              drink will be free is also accomplished by using local storage. The user's favourite drink and the number
+              of drinks purchased will not be erased even if the window or tab is closed.
+            </p>
+            <div class="skillsDiv">
+              <h3>Demo</h3>
+              <a href="ECMAScript.html">Coffee Ordering Website</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <h2 class="footerH2">Contacts</h2>
+      <p>Name: Euan Martin</p>
+      <p><a href="mailto:m022207i@student.staffs.ac.uk">m022207i@student.staffs.ac.uk</a></p>
+      <h2 class="footerH2">Image References</h2>
+      <ul class="footerUl">
+        <li><a
+            href="https://www.ofdesign.net/interior-design/a-living-room-3-cheap-interior-design-ideas-in-different-colors-1670">Design
+            1 and Design
+            2 image</a></li>
+        <li> <a
+            href=" https://www.independent.co.uk/life-style/food-and-drink/coffee-weight-loss-healthy-nutritional-value-fat-burn-diet-metabolism-a8296946.html">Coffee
+            image</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("../sw.js")
+        .then((registration) => console.log("Service worker registration successful", registration))
+        .catch((err) => console.log("Service worker regstration failed", err)));
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+  "drinks": [{
+      "Name": "Latte"
+    },
+    {
+      "Name": "Flat white"
+    },
+    {
+      "Name": "Cappuccino"
+    },
+    {
+      "Name": "Espresso"
+    },
+    {
+      "Name": "Americano"
+    }
+  ],
+  "milk": [{
+      "Name": "Whole"
+    },
+    {
+      "Name": "Skimmed"
+    },
+    {
+      "Name": "Semi-skimmed"
+    },
+    {
+      "Name": "Coconut"
+    },
+    {
+      "Name": "Soya"
+    }
+  ]
+}

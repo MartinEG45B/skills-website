@@ -1,0 +1,22 @@
+{
+    "name": "Web Development CV Site",
+    "short_name": "CV",
+    "start_url": "index.html",
+    "description": "Shows my skills in web development, including design, HTML, CSS, and ECMASCript",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "icons": [{
+            "src": "images/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#eb932b",
+    "background_color": "#eb932b",
+    "display": "standalone"
+}

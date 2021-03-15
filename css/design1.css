@@ -1,0 +1,527 @@
+@font-face {
+  font-family: 'Abhaya Libre';
+  src: url('../images/fonts/AbhayaLibre-Regular.eot');
+  src: url('../images/fonts/AbhayaLibre-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../images/fonts/AbhayaLibre-Regular.woff2') format('woff2'),
+    url('../images/fonts/AbhayaLibre-Regular.woff') format('woff'),
+    url('../images/fonts/AbhayaLibre-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+
+}
+
+*,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --linkColour: black;
+  --navFooterBg: #ECECEC;
+}
+
+body {
+  background-color: #00887A;
+  font-family: 'Abhaya Libre', Helvetica, Arial, sans-serif;
+}
+
+p {
+  text-align: left;
+  line-height: 200%;
+  font-size: 1.15em;
+}
+
+header p {
+  line-height: 200%;
+  font-size: 1.25em;
+}
+
+.mainNav {
+  position: sticky;
+  top: 0;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--navFooterBg);
+}
+
+.mainNav li {
+  flex-grow: 1;
+  width: calc(100%/3);
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: var(--linkColour);
+}
+
+.mainNav a,
+footer p a,
+footer li a {
+  min-height: 50px;
+  min-width: 100%;
+  line-height: 50px;
+  display: block;
+}
+
+.mainNav ul li:nth-child(1) a,
+.mainNav ul li:nth-child(2) a,
+.skillsDiv {
+  text-align: center;
+}
+
+.mainNav a:hover {
+  background-color: var(--linkColour);
+  color: var(--navFooterBg);
+}
+
+.mainNav ul li:nth-child(3) a {
+  font-size: 0.8em;
+}
+
+main {
+  padding-top: 1%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header,
+article {
+  padding: 1% 5% 5% 5%;
+}
+
+article:nth-of-type(1) {
+  background-color: #F3D250;
+}
+
+article:nth-of-type(2) {
+  background-color: #90CCF4;
+}
+
+article:nth-of-type(3) {
+  background-color: #F78888;
+}
+
+
+h2:not(.footerH2) {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 3%;
+}
+
+#headerDiv {
+  margin-top: 3%;
+}
+
+footer {
+  background-color: var(--navFooterBg);
+}
+
+footer p:nth-of-type(1) {
+  padding-top: 3%;
+}
+
+footer p {
+  padding-left: 1%;
+}
+
+.footerUl {
+  color: var(--linkColour);
+  margin-left: 0;
+  padding-left: 40px;
+  margin-top: 0.5%;
+}
+
+footer p a {
+  color: var(--linkColour);
+}
+
+footer li a {
+  color: var(--linkColour);
+  font-size: 1.15em;
+}
+
+.footerH2 {
+  padding-left: 1%;
+  padding-top: 1.5%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+img {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  display: block;
+}
+
+/* From animate.css (https://animate.style/)*/
+@-webkit-keyframes shake {
+
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.mainNav li a:active {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+header,
+article h2,
+article div {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* From animate.css */
+
+@media(min-width:300px) {
+  .mainNav ul li:nth-child(3) a {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+@media(min-width:600px) {
+  footer p:nth-of-type(1) {
+    padding-top: 2%;
+  }
+}
+
+@media(min-width:700px) {
+
+  article div,
+  header div,
+  picture {
+    display: flex;
+  }
+
+  .imgInHeader,
+  .imgInP {
+    margin: auto 0;
+    width: 250px;
+    height: 200px;
+  }
+
+  header div p,
+  article div p {
+    margin: auto 5%;
+  }
+
+  .mainNav {
+    position: static;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 50%;
+  }
+
+  .mainNav ul {
+    border-radius: 25px;
+  }
+
+  .mainNav ul li:nth-child(1) a {
+    border-radius: 25px 0px 0px 25px;
+  }
+
+  .mainNav ul li:nth-child(3) a {
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  h1 {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 3.4em;
+  }
+
+  #headerDiv {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+@media(min-width:945px) {
+  h1 {
+
+    font-size: 5em;
+  }
+
+  .mainNav {
+    margin-left: 5%;
+  }
+
+  #articleContainer {
+    display: flex;
+  }
+
+  article {
+    padding: 1% 2% 2% 2%;
+  }
+
+  article div {
+    display: block;
+
+  }
+
+  atricle picture {
+    display: inline;
+  }
+
+  .imgInP {
+    margin: 0 auto;
+  }
+
+  article:nth-of-type(1) h2 {
+    margin-top: 18%;
+    margin-bottom: 18%;
+  }
+
+  article:nth-of-type(2) h2,
+  article:nth-of-type(3) h2 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  header div p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  article:nth-of-type(1) div p {
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
+
+  article:nth-of-type(2) div p,
+  article:nth-of-type(3) div p {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
+  @-webkit-keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  header {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  @-webkit-keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  article h2,
+  article div {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  .mainNav {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+}
+
+@media(min-width:1000px) {
+  footer p:nth-of-type(1) {
+    padding-top: 1.5%;
+  }
+
+  .imgInHeader {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media(min-width:1210px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .imgInP {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media(min-width:1220px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 15%;
+    margin-bottom: 16%;
+  }
+}
+
+@media(min-width:1240px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 15%;
+    margin-bottom: 17.5%;
+  }
+}
+
+@media(min-width:1270px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 15%;
+    margin-bottom: 18.5%;
+  }
+}
+
+
+@media(min-width:1310px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 15%;
+    margin-bottom: 19.5%;
+  }
+}
+
+
+
+@media(min-width:1330px) {
+  article:nth-of-type(1) h2 {
+    margin-top: 18%;
+    margin-bottom: 18%;
+  }
+}

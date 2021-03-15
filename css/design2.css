@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Aller';
+  src: url('../images/fonts/Aller.eot');
+  src: url('../images/fonts/Aller.eot?#iefix') format('embedded-opentype'),
+    url('../images/fonts/Aller.woff2') format('woff2'),
+    url('../images/fonts/Aller.woff') format('woff'),
+    url('../images/fonts/Aller.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+*,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navFooterBg: #131313;
+  --navFooterText: #ECECEC;
+}
+
+p {
+  text-align: left;
+  line-height: 200%;
+}
+
+body {
+  font-family: 'Aller', Helvetica, Arial, sans-serif;
+  background-color: var(--navFooterBg);
+}
+
+.mainNav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--navFooterBg);
+}
+
+.mainNav li {
+  flex-grow: 1;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: var(--navFooterText);
+}
+
+.mainNav a,
+footer p a,
+footer li a {
+  min-height: 50px;
+  min-width: 100%;
+  line-height: 50px;
+  display: block;
+}
+
+.mainNav ul li:nth-child(1) a,
+.mainNav ul li:nth-child(2) a,
+.mainNav ul li:nth-child(3) a,
+.skillsDiv {
+  text-align: center;
+}
+
+.mainNav a:hover {
+  text-decoration: underline;
+}
+
+.mainNav li:hover {
+  border-right: 15px solid #960018;
+}
+
+header {
+  background-color: #A4262C;
+  color: #f5f5f5;
+}
+
+article:nth-of-type(1) {
+  background-color: #131313;
+  color: white;
+}
+
+article:nth-of-type(2),
+article:nth-of-type(3) {
+  background-color: #f5f5f5;
+}
+
+img {
+  margin: 15% auto;
+  display: block;
+}
+
+h1,
+h2:not(.footerH2) {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+header p,
+article p {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+header,
+article {
+  padding: 1% 5% 5% 5%;
+}
+
+
+#articleContainer {
+  display: grid;
+}
+
+article:nth-of-type(1) {
+  order: 1;
+}
+
+article:nth-of-type(2) {
+  order: 2;
+}
+
+article:nth-of-type(3) {
+  order: 0;
+}
+
+
+footer {
+  background-color: var(--navFooterBg);
+  color: var(--navFooterText);
+}
+
+footer p:nth-of-type(1) {
+  padding-top: 3%;
+}
+
+footer p {
+  padding-left: 1%;
+}
+
+.footerH2 {
+  padding-left: 1%;
+  padding-top: 1.5%;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.footerUl {
+  color: var(--navFooterText);
+  margin-left: 0;
+  padding-left: 40px;
+  margin-top: 0.5%;
+}
+
+footer p a,
+footer li a {
+  color: var(--navFooterText);
+}
+
+/* From animate.css (https://animate.style/)*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+header,
+article h2,
+article div {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.mainNav li:active {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+/* From animate.css */
+@media(min-width:290px) {
+
+  p,
+  footer li a {
+    font-size: 1.15em;
+  }
+}
+
+@media(min-width:450px) {
+
+  h1,
+  h2 {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin: 8% auto;
+    display: block;
+  }
+}
+
+@media(min-width:600px) {
+  footer p:nth-of-type(1) {
+    padding-top: 2%;
+  }
+}
+
+@media(min-width:720px) {
+  #Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header p {
+    margin-top: 20%;
+    font-size: 1.6em;
+
+  }
+
+  h1 {
+    font-size: 4.4em;
+    margin-top: 70%;
+    margin-bottom: 20%;
+  }
+
+}
+
+@media(min-width:1000px) {
+  footer p:nth-of-type(1) {
+    padding-top: 1.5%;
+  }
+}
